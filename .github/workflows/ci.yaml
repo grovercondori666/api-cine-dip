@@ -31,7 +31,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checlout@v4
+        uses: actions/checkout@v4
 
       - name: docker-build
         run: docker build -f ./Dockerfile -t "$IMAGEN" .
+
+      -name: inicio-sesion
